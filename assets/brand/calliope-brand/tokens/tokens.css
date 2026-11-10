@@ -1,0 +1,55 @@
+/* Calliope design tokens · Brand Guidelines 1.0 · November 2026
+   Applies to: Calliope, Sirenradar, Unsiren, Calliope community.
+   Orfeo apps (laiive, VaiVia, ...) are style-independent and do NOT have to use these. */
+@import url('../fonts/fonts.css');
+
+:root {
+  /* Base palette */
+  --petrol: #10282E;        /* Calliope · high-level screens, around everything */
+  --petrol-surface: #1A3A41;/* cards on petrol */
+  --petrol-line: #24464E;   /* hairlines on petrol */
+  --aqua: #A8F5EE;          /* accent on petrol · Orfeo apps cards */
+  --aqua-muted: #7FB5B0;    /* secondary text on petrol (6.7:1) */
+  --aqua-ink: #2F5A5F;      /* secondary text on aqua (6.2:1) */
+  --plum: #3B1222;          /* Sirenradar */
+  --plum-deep: #22080F;     /* terminals / code panels on plum */
+  --plum-line: #5A2A40;     /* hairlines on plum */
+  --plum-muted: #C9A3D6;    /* secondary text on plum (7.5:1) */
+  --lilac: #E4B8F5;         /* Calliope community · text on plum */
+  --lilac-ink: #6E3550;     /* secondary text on lilac (5.5:1) */
+  --cream: #FDF6D8;         /* data, communication, Unsiren · body text on dark */
+  --cream-surface: #F4EBC4; /* panels on cream */
+  --cream-line: #E2D6A4;    /* hairlines on cream */
+  --olive: #3A3200;         /* text on cream (11.8:1) */
+  --olive-muted: #6B6230;   /* secondary text on cream (5.7:1) */
+
+  /* Brand roles: background / foreground / accent */
+  --calliope-bg: var(--petrol);   --calliope-fg: var(--cream);   --calliope-accent: var(--aqua);
+  --sirenradar-bg: var(--plum);   --sirenradar-fg: var(--lilac); --sirenradar-accent: var(--cream);
+  --unsiren-bg: var(--cream);     --unsiren-fg: var(--olive);    --unsiren-accent: var(--olive);
+  --orfeo-bg: var(--aqua);        --orfeo-fg: var(--petrol);     --orfeo-accent: var(--petrol);
+  --community-bg: var(--lilac);   --community-fg: var(--plum);   --community-accent: var(--plum);
+  --data-bg: var(--cream);        --data-fg: var(--olive);
+
+  /* Type */
+  --font-sans: 'Schibsted Grotesk', system-ui, sans-serif;  /* 400 · 500 · 800 */
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;    /* 400 · 700 */
+  --text-display: 800 72px/0.95 var(--font-sans);  --tracking-display: -0.055em;
+  --text-h1: 800 56px/1 var(--font-sans);          --tracking-h1: -0.05em;
+  --text-h2: 800 28px/1.05 var(--font-sans);       --tracking-h2: -0.04em;
+  --text-body: 400 17px/1.5 var(--font-sans);
+  --text-small: 400 14px/1.45 var(--font-sans);
+  --text-label: 400 12px/1.5 var(--font-mono);
+
+  /* Shape and space */
+  --radius-card: 26px; --radius-tile: 24px; --radius-chip: 999px;
+  --icon-tile-ratio: 0.29;           /* border-radius = 29% of the tile size */
+  --gutter: 64px; --gap: 16px;
+
+  /* Motion */
+  --motion-loop: 9s;                 /* explanatory loops: 6 to 10 s */
+  --ease-out: cubic-bezier(.2,.7,.2,1);
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

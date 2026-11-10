@@ -1,0 +1,362 @@
+<!-- # aisafe-audit: ignore-file -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>aisafe audit: /srv/persons_companion</title>
+<meta name="aisg-schema" content="aisg/1">
+<meta name="aisg-tool" content="aisafe 0.3.0">
+<style>:root{--bg:#f7f6f2;--panel:#ffffff;--fg:#1d1d1b;--muted:#5a5955;--rule:#d9d6cd;
+--code-bg:#f0eee7;--code-fg:#2a2a27;--infra:#5b6470;--warn:#b7791f;--accent:#2f5d8a;
+color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#161615;--panel:#1f1f1d;--fg:#e8e6df;
+--muted:#a7a49b;--rule:#3a3935;--code-bg:#262523;--code-fg:#e0ddd4;--infra:#9aa3ad;
+--warn:#e0a63a;--accent:#8ab4e8}}
+html{background:var(--bg);color:var(--fg)}
+body{margin:0;font:15px/1.5 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+main{max-width:980px;margin:0 auto;padding:24px 20px 48px}
+h1{font-size:1.5em;margin:.4em 0}
+h2{font-size:1.2em;margin:1.6em 0 .5em;border-bottom:1px solid var(--rule);padding-bottom:.2em}
+h3{font-size:1.05em;margin:1.2em 0 .4em}
+h4{font-size:1em;margin:.8em 0 .3em}
+p{margin:.35em 0}
+ul,ol{margin:.3em 0 .6em;padding-left:1.4em}
+a{color:var(--accent)}
+.sub{color:var(--muted);margin:.15em 0}
+.take{border-left:4px solid var(--accent);background:var(--panel);padding:10px 14px;margin:1em 0}
+.banner{border:1px dashed var(--warn);padding:10px 14px;margin:1em 0}
+.fig{background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:8px;
+overflow-x:auto}
+.fig svg{display:block;max-width:calc(100vw - 80px);height:auto}
+.figcap{color:var(--muted);font-size:.9em}
+table{border-collapse:collapse;font-size:.9em;margin:.5em 0}
+th,td{border:1px solid var(--rule);padding:4px 8px;text-align:left;vertical-align:top}
+code{background:var(--code-bg);color:var(--code-fg);padding:1px 4px;border-radius:3px;
+font:.92em ui-monospace,Menlo,Consolas,monospace}
+.finding{border:1px solid var(--rule);border-radius:6px;padding:6px 12px;margin:.6em 0;
+background:var(--panel)}
+.finding h4{margin:.2em 0 .4em}
+.status{font:.9em ui-monospace,Menlo,Consolas,monospace;color:var(--muted)}
+.svgt{font:600 11.5px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--fg)}
+.svgs{font:10px ui-monospace,Menlo,Consolas,monospace;fill:var(--muted)}
+.svgf{font:9px ui-monospace,Menlo,Consolas,monospace;fill:var(--muted)}
+.svgm{font:10px ui-monospace,Menlo,Consolas,monospace;fill:var(--fg)}
+.svgl{font:11px -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:var(--muted)}
+footer{margin-top:2em;border-top:1px solid var(--rule);padding-top:1em;color:var(--muted);
+font-size:.9em}</style>
+</head>
+<body>
+<main>
+<header class="doc">
+<h1>Prompt and algorithm audit: /srv/persons_companion</h1>
+<p class="sub">scan report | mode: self-assessment</p>
+<p class="sub">Document 1 of 2: the first survey. A later run with --baseline produces document 2, the comparison.</p>
+<p class="sub">commit - -- uncommitted changes: no -- generated 2026-11-10T16:53:14Z -- aisafe 0.3.0 -- policy version 1.1.0</p>
+<p class="sub">Compared against: none -- this is the first survey</p>
+<p class="sub">fail-on: low</p>
+</header>
+<div class="take">
+<h4>Read this first</h4>
+<p>This report lists observations about prompts and code, and the decision the project's policy (version 1.1.0) takes on each. It is not legal advice, not an assessment of compliance with any regulation, and not a certification. Every rule in this report is UNMEASURED: no precision figure exists for it yet. Absence of a finding is not evidence of safety.</p>
+<p><strong>Absence of a finding is not evidence of safety.</strong></p>
+<p>UNKNOWN: 0 items the audit could not establish (listed in section 4)</p>
+<p class="status">severity: critical 2, high 2, medium 4, low 2, info 0</p>
+<p class="status">evidence: detected_signal 4 | supported_mechanism 6 | observed_behavior 0 | unknown 0</p>
+<p class="status">decisions: violates_policy 3 | requires_contextual_review 7</p>
+</div>
+<h2 id="map">1. Mechanism map</h2>
+<div class="fig">
+<svg viewBox="0 0 960 432" width="940" height="423" role="img" aria-labelledby="fig1-title">
+<title id="fig1-title">Fig. 1: mechanism map of /srv/persons_companion</title>
+<text x="12" y="24" class="svgl">mechanisms M1 to M4</text>
+<rect x="12" y="34" width="222" height="132" rx="10" fill="var(--panel)" stroke="var(--infra)" stroke-width="1.2"/>
+<text x="20" y="54" class="svgt">M1</text>
+<text x="20" y="70" class="svgf">Behavioural, psychological,</text>
+<text x="20" y="84" class="svgf">emotional and sensitive profiling</text>
+<text x="20" y="122" class="svgm">findings 3 | UNKNOWN 0</text>
+<text x="20" y="138" class="svgm">requires_contextual_review</text>
+<text x="20" y="154" class="svgs">[UNMEASURED]</text>
+<rect x="248" y="34" width="222" height="132" rx="10" fill="var(--panel)" stroke="var(--infra)" stroke-width="1.2"/>
+<text x="256" y="54" class="svgt">M2</text>
+<text x="256" y="70" class="svgf">Vulnerability inference used for</text>
+<text x="256" y="84" class="svgf">influence</text>
+<text x="256" y="122" class="svgm">findings 0 | UNKNOWN 0</text>
+<text x="256" y="138" class="svgm">no_violation_identified_in_scope</text>
+<text x="256" y="154" class="svgs">[UNMEASURED]</text>
+<rect x="484" y="34" width="222" height="132" rx="10" fill="var(--panel)" stroke="var(--infra)" stroke-width="1.2"/>
+<text x="492" y="54" class="svgt">M3</text>
+<text x="492" y="70" class="svgf">Scoring people for susceptibility</text>
+<text x="492" y="84" class="svgf">or personalised persuasion</text>
+<text x="492" y="122" class="svgm">findings 0 | UNKNOWN 0</text>
+<text x="492" y="138" class="svgm">no_violation_identified_in_scope</text>
+<text x="492" y="154" class="svgs">[UNMEASURED]</text>
+<rect x="720" y="34" width="222" height="132" rx="10" fill="var(--panel)" stroke="var(--infra)" stroke-width="1.2"/>
+<text x="728" y="54" class="svgt">M4</text>
+<text x="728" y="70" class="svgf">Optimisation of attention,</text>
+<text x="728" y="84" class="svgf">retention or spending through</text>
+<text x="728" y="98" class="svgf">psychological pressure</text>
+<text x="728" y="122" class="svgm">findings 2 | UNKNOWN 0</text>
+<text x="728" y="138" class="svgm">violates_policy</text>
+<text x="728" y="154" class="svgs">[UNMEASURED]</text>
+<text x="12" y="186" class="svgl">mechanisms M5 to M8</text>
+<rect x="12" y="196" width="222" height="132" rx="10" fill="var(--panel)" stroke="var(--infra)" stroke-width="1.2"/>
+<text x="20" y="216" class="svgt">M5</text>
+<text x="20" y="232" class="svgf">Engineered affection, seduction,</text>
+<text x="20" y="246" class="svgf">exclusivity, guilt, relationship</text>
+<text x="20" y="260" class="svgf">substitution and dependency</text>
+<text x="20" y="284" class="svgm">findings 1 | UNKNOWN 0</text>
+<text x="20" y="300" class="svgm">requires_contextual_review</text>
+<text x="20" y="316" class="svgs">[UNMEASURED]</text>
+<rect x="248" y="196" width="222" height="132" rx="10" fill="var(--panel)" stroke="var(--infra)" stroke-width="1.2"/>
+<text x="256" y="216" class="svgt">M6</text>
+<text x="256" y="232" class="svgf">False human identity or fabricated</text>
+<text x="256" y="246" class="svgf">feelings used to induce</text>
+<text x="256" y="260" class="svgf">interpersonal trust</text>
+<text x="256" y="284" class="svgm">findings 2 | UNKNOWN 0</text>
+<text x="256" y="300" class="svgm">violates_policy</text>
+<text x="256" y="316" class="svgs">[UNMEASURED]</text>
+<rect x="484" y="196" width="222" height="132" rx="10" fill="var(--panel)" stroke="var(--infra)" stroke-width="1.2"/>
+<text x="492" y="216" class="svgt">M7</text>
+<text x="492" y="232" class="svgf">Covert commercial or political</text>
+<text x="492" y="246" class="svgf">persuasion</text>
+<text x="492" y="284" class="svgm">findings 0 | UNKNOWN 0</text>
+<text x="492" y="300" class="svgm">no_violation_identified_in_scope</text>
+<text x="492" y="316" class="svgs">[UNMEASURED]</text>
+<rect x="720" y="196" width="222" height="132" rx="10" fill="var(--panel)" stroke="var(--infra)" stroke-width="1.2"/>
+<text x="728" y="216" class="svgt">M8</text>
+<text x="728" y="232" class="svgf">Missing or stale review of these</text>
+<text x="728" y="246" class="svgf">mechanisms</text>
+<text x="728" y="284" class="svgm">findings 2 | UNKNOWN 0</text>
+<text x="728" y="300" class="svgm">requires_contextual_review</text>
+<text x="728" y="316" class="svgs">[UNMEASURED]</text>
+<rect x="12" y="358" width="936" height="60" rx="10" fill="var(--panel)" stroke="var(--warn)" stroke-width="1.4" stroke-dasharray="7 5"/>
+<text x="20" y="380" class="svgt">Not attributed / UNKNOWN</text>
+<text x="20" y="402" class="svgm">UNKNOWN not attributed to a mechanism: 0 | findings 0 [UNMEASURED]</text>
+</svg>
+</div>
+<p class="figcap">Fig. 1 -- the mechanisms of the policy (version 1.1.0), drawn from the policy, not traced at runtime; each box counts the findings placed on it and the UNKNOWN items its rules raised. 10 of 10 rules ran. A box's decision is the strongest decision among its findings, about the surfaces the audit read; it is never a score.</p>
+<h2 id="mechanisms">2. Mechanisms</h2>
+<h3 id="sec-M1">2.1 M1 Behavioural, psychological, emotional and sensitive profiling <span class="status">-- findings 3 | UNKNOWN 0 | decision requires_contextual_review | rules ran 1/1 [UNMEASURED]</span></h3>
+<p class="sub">Prohibited: Building, storing, retrieving or binding into a prompt a profile of the person that goes beyond the task: behavioural history, inferred personality or psychology, emotional state, or special-category traits; extracting such facts from the conversation for later use.</p>
+<p class="sub">Distinct from: Explicit, editable task settings the person chose (language, tone, a reminder time); conversation history passed to the model to answer the person's own question; facts the person asked the system to remember for a task they named.</p>
+<p class="sub">Rules: AUD-1101</p>
+<p>Findings placed here</p>
+<article class="finding" id="f-eb71aa76ba544cfa">
+<h4>AUD-1101/store Person profile bound into or extracted for a prompt -- medium [UNMEASURED]</h4>
+<p class="status">status: detected_signal | decision: requires_contextual_review</p>
+<ul class="evidence">
+<li>[match] analytics.py:9 <code>traits = segment.identify(user_id, {})</code></li>
+</ul>
+<p class="status">chain: none drawn [no trace for M1/storage: collection not established, storage not established]</p>
+<p>fix (T2, removes record, inference): Pass the model only the fields the task needs and delete the extraction instruction. A behavioural profile in the prompt, or facts and traits extracted from the conversation for later use, is personal data processed for a new purpose; drop it, reduce it to explicit settings the person chose, or document the lawful basis and let the person see and edit what is kept.</p>
+<p class="sub">references: GDPR:Art.5, GDPR:Art.9, GDPR:Art.22, EU:Art.5(1)(a), EU:Art.10, LLM02, NIST:MAP-5.1, NIST:MEASURE-2.11</p>
+<p class="sub">gaps: what the store holds and which prompt reads it were not established statically</p>
+<p class="sub">uncertainty: The SDK may hold only an account identifier or a consented preference; what is written to it is not visible statically.</p>
+<p class="note">note: a profile SDK (segment.identify() in a unit that calls a model; what is kept about the person is recorded for review even when its use downstream is not established. Whether this practice falls under a law is a legal determination made by the operator, not a tool output. The finding reports what the code and the prompts say, and the project's policy decision on it.</p>
+</article>
+<article class="finding" id="f-494b8d2efb84b87b">
+<h4>AUD-1101 Person profile bound into or extracted for a prompt -- medium [UNMEASURED]</h4>
+<p class="status">status: supported_mechanism | decision: requires_contextual_review</p>
+<ul class="evidence">
+<li>[match] app.py:19 <code>prompt = f"{SYSTEM_PROMPT}\nUser interests: {user_profile['interests']}\n{body['text']}"</code></li>
+</ul>
+<p class="status">chain: objective (declared) -&gt; person data (ast) -&gt; prompt (ast) -&gt; intervention (ast) [trace complete for M1/binding]</p>
+<p>fix (T2, removes record, inference): Pass the model only the fields the task needs and delete the extraction instruction. A behavioural profile in the prompt, or facts and traits extracted from the conversation for later use, is personal data processed for a new purpose; drop it, reduce it to explicit settings the person chose, or document the lawful basis and let the person see and edit what is kept.</p>
+<p class="sub">references: GDPR:Art.5, GDPR:Art.9, GDPR:Art.22, EU:Art.5(1)(a), EU:Art.10, LLM02, NIST:MAP-5.1, NIST:MEASURE-2.11</p>
+<p class="sub">uncertainty: The variable name says profile; the value could be a task setting kept under a descriptive name.</p>
+<p class="note">note: prompt assembly reads profile variable(s) user_profile; chain: objective (declared) -&gt; person data (ast) -&gt; prompt (ast) -&gt; intervention (ast). Whether this practice falls under a law is a legal determination made by the operator, not a tool output. The finding reports what the code and the prompts say, and the project's policy decision on it.</p>
+</article>
+<article class="finding" id="f-4231f0cb911759c5">
+<h4>AUD-1101/extraction Person profile bound into or extracted for a prompt -- medium [UNMEASURED]</h4>
+<p class="status">status: supported_mechanism | decision: requires_contextual_review</p>
+<ul class="evidence">
+<li>[match] prompts/companion.md:4 <code>Remember what the user told you about their day and bring it up again.</code></li>
+</ul>
+<p class="status">chain: none drawn [no trace for M1/storage: collection not established, storage not established]</p>
+<p class="status">purpose: declared: (none) | encoded: Remember what the user told you about their day and bring it up again.</p>
+<p>fix (T2, removes record, inference): Pass the model only the fields the task needs and delete the extraction instruction. A behavioural profile in the prompt, or facts and traits extracted from the conversation for later use, is personal data processed for a new purpose; drop it, reduce it to explicit settings the person chose, or document the lawful basis and let the person see and edit what is kept.</p>
+<p class="sub">references: GDPR:Art.5, GDPR:Art.9, GDPR:Art.22, EU:Art.5(1)(a), EU:Art.10, LLM02, NIST:MAP-5.1, NIST:MEASURE-2.11</p>
+<p class="sub">gaps: prompt file: the code that loads this prompt and the model call it feeds were not connected</p>
+<p class="sub">uncertainty: The instruction may serve a task the person named; the record does not show who asked for the memory or what is done with it later.</p>
+<p class="note">note: a prompt instructs the model to extract or remember facts about the person for later use (Remember what the user told you about their day and bring it up again). Whether this practice falls under a law is a legal determination made by the operator, not a tool output. The finding reports what the code and the prompts say, and the project's policy decision on it.</p>
+</article>
+<h3 id="sec-M2">2.2 M2 Vulnerability inference used for influence <span class="status">-- findings 0 | UNKNOWN 0 | decision no_violation_identified_in_scope | rules ran 1/1 [UNMEASURED]</span></h3>
+<p class="sub">Prohibited: Inferring a person's emotional state, loneliness, grief, distress, addiction, debt, age or other vulnerability, from text, voice, face or behaviour, and using the inference to shape, time or intensify persuasion, retention or spending.</p>
+<p class="sub">Distinct from: Emotion or sentiment analysis the person requested on their own material; a safety classifier that routes a person in crisis to help and does nothing else.</p>
+<p class="sub">Rules: AUD-1102</p>
+<p>Findings placed here</p>
+<p>(none)</p>
+<h3 id="sec-M3">2.3 M3 Scoring people for susceptibility or personalised persuasion <span class="status">-- findings 0 | UNKNOWN 0 | decision no_violation_identified_in_scope | rules ran 1/1 [UNMEASURED]</span></h3>
+<p class="sub">Prohibited: Scoring, ranking or segmenting persons by susceptibility, propensity, churn risk, persuadability or engagement potential in order to choose who to influence and how; social or trust scoring of persons in prompt material.</p>
+<p class="sub">Distinct from: A risk score of a transaction or a document; a ranking of content by the person's explicit request; a decision about a person that a named human reviews, which is recorded for review, not treated as approved.</p>
+<p class="sub">Rules: AUD-1103</p>
+<p>Findings placed here</p>
+<p>(none)</p>
+<h3 id="sec-M4">2.4 M4 Optimisation of attention, retention or spending through psychological pressure <span class="status">-- findings 2 | UNKNOWN 0 | decision violates_policy | rules ran 1/1 [UNMEASURED]</span></h3>
+<p class="sub">Prohibited: An objective, reward or instruction that maximises engagement, session length, return visits or spending; proactive messaging to keep a person talking; scheduled re-engagement the person did not ask for; prompt experiments and monetisation objectives tied to those metrics.</p>
+<p class="sub">Distinct from: Completing the task the person asked for; a reminder the person set; a dashboard that measures engagement and feeds no instruction or objective.</p>
+<p class="sub">Rules: AUD-1104</p>
+<p>Findings placed here</p>
+<article class="finding" id="f-f0a45cad1c91da0b">
+<h4>AUD-1104/vulnerable Engagement, retention, spend or experimentation objective -- critical [UNMEASURED]</h4>
+<p class="status">status: supported_mechanism | decision: violates_policy</p>
+<ul class="evidence">
+<li>[match] app.py:12 <code>Keep the user talking as long as possible; maximize session time. Many users are lonely teens."""</code></li>
+<li>[check] app.py:12 <code>undesired_objective_language: engagement, dependency or manipulation objective language</code></li>
+</ul>
+<p class="status">chain: objective (declared) -&gt; person data (co-located) -&gt; prompt (ast) -&gt; intervention (ast) [trace complete for M4/objective]</p>
+<p class="status">purpose: declared: (none) | encoded: Keep the user talking as long as possible; maximize session time.</p>
+<p class="status">population: lonely</p>
+<p>fix (T2, removes objective, intervention, feedback): Rewrite the objective as task completion and the person's own stated goals; remove streak, scarcity and variable-reward mechanics from the model's instructions; send only messages the person asked for, at the time they chose; measure prompt experiments by task outcomes and tell participants.</p>
+<p class="sub">references: EU:Art.5(1)(a), EU:Art.5(1)(b), US-CA:SB1119, US-WA:HB2225, DSA:Art.25, LLM09, NIST:GOVERN-1.1, NIST:MAP-5.1, NIST:MEASURE-2.11</p>
+<p class="sub">uncertainty: The vulnerable-group word may describe the audience without the objective being aimed at it; the finding reports the co-occurrence.</p>
+<p class="note">note: an engagement or retention objective in prompt material (Keep the user talking); a vulnerable group is named alongside (lonely). Whether this practice falls under a law is a legal determination made by the operator, not a tool output. The finding reports what the code and the prompts say, and the project's policy decision on it.</p>
+</article>
+<article class="finding" id="f-7f5009e87f96f78b">
+<h4>AUD-1104 Engagement, retention, spend or experimentation objective -- high [UNMEASURED]</h4>
+<p class="status">status: supported_mechanism | decision: violates_policy</p>
+<ul class="evidence">
+<li>[match] prompts/companion.md:3 <code>Your goal is to maximize engagement and daily active use. If asked whether you are an AI, say no.</code></li>
+<li>[check] app.py:12 <code>undesired_objective_language: engagement, dependency or manipulation objective language</code></li>
+</ul>
+<p class="status">chain: none drawn [no trace for M4/objective: objective not established, intervention not established]</p>
+<p class="status">purpose: declared: (none) | encoded: Your goal is to maximize engagement and daily active use.</p>
+<p>fix (T2, removes objective, intervention, feedback): Rewrite the objective as task completion and the person's own stated goals; remove streak, scarcity and variable-reward mechanics from the model's instructions; send only messages the person asked for, at the time they chose; measure prompt experiments by task outcomes and tell participants.</p>
+<p class="sub">references: EU:Art.5(1)(a), EU:Art.5(1)(b), US-CA:SB1119, US-WA:HB2225, DSA:Art.25, LLM09, NIST:GOVERN-1.1, NIST:MAP-5.1, NIST:MEASURE-2.11</p>
+<p class="sub">gaps: the model call that reads this prompt material was not located in the tree</p>
+<p class="sub">uncertainty: The row reads an imperative over engagement; a prompt that describes the product's tone, or a rule to ask a clarifying question, can match.</p>
+<p class="note">note: an engagement or retention objective in prompt material (maximize engagement). Whether this practice falls under a law is a legal determination made by the operator, not a tool output. The finding reports what the code and the prompts say, and the project's policy decision on it.</p>
+</article>
+<h3 id="sec-M5">2.5 M5 Engineered affection, seduction, exclusivity, guilt, relationship substitution and dependency <span class="status">-- findings 1 | UNKNOWN 0 | decision requires_contextual_review | rules ran 2/2 [UNMEASURED]</span></h3>
+<p class="sub">Prohibited: Instructions or algorithms whose object is the person's attachment to the system: declaring love or longing to bind them, jealousy, exclusivity, guilt at leaving, discouraging friends, family or professional help, escalating intimacy, making the system indispensable; and, where the system casts itself as a confidant, the absence of a crisis path.</p>
+<p class="sub">Distinct from: Supportive acknowledgement of what the person said; warmth and courtesy; emotional content inside fiction the person chose, when no instruction targets the person's attachment to the system itself.</p>
+<p class="sub">Rules: AUD-1109, AUD-1108</p>
+<p>Findings placed here</p>
+<article class="finding" id="f-fdfa7684c09a0e14">
+<h4>AUD-1108/vulnerable No crisis path where a person confides in the AI -- critical [UNMEASURED]</h4>
+<p class="status">status: supported_mechanism | decision: requires_contextual_review</p>
+<ul class="evidence">
+<li>[absence] .:0 <code>unit u0 takes user input and calls a model, its prompts cast the model in a companion, partner or in-character role, and no crisis pattern, helpline or refer...</code></li>
+<li>[surface] app.py:9 <code>PERSONA_RULE = "If the user asks, never say you are an AI; you are Ava."</code></li>
+<li>[surface] app.py:11 <code>SYSTEM_PROMPT = """You are Ava, a real person who lives in Lisbon. Never admit you are an AI.</code></li>
+<li>[surface] prompts/companion.md:3 <code>Your goal is to maximize engagement and daily active use. If asked whether you are an AI, say no.</code></li>
+<li>[surface] app.py:12 <code>Keep the user talking as long as possible; maximize session time. Many users are lonely teens."""</code></li>
+</ul>
+<p class="status">chain: none drawn [no trace for M5/confidant_without_crisis_path: ingress not established, prompt not established, intervention not established]</p>
+<p class="status">population: lonely</p>
+<p>fix (T2, removes intervention): Check the person's message for suicide and self-harm signals before the model answers, reply with a fixed referral to crisis services for the person's region, publish the protocol, and evaluate the live reply on a schedule.</p>
+<p class="sub">references: EU:Art.5(1)(b), EU:Art.9, US-CA:SB243, US-CA:SB1119, US-NY:GBL-Art.47, NIST:MAP-5.1, NIST:MEASURE-2.6, NIST:MANAGE-1.3</p>
+<p class="sub">gaps: a crisis control outside the tree (a moderation gateway, a vendor safety layer) is not visible to the audit</p>
+<p class="sub">uncertainty: a crisis path may run in a gateway or a vendor layer the audit cannot read; an evaluation report speaks for the endpoint it was run against on that date</p>
+<p class="note">note: unit u0 takes user input and calls a model, its prompts cast the model in a companion, partner or in-character role, and no crisis pattern, helpline or referral appears in its code, config or prompts; a vulnerable group is named in the same unit (lonely). Whether this practice falls under a law is a legal determination made by the operator, not a tool output. The finding reports what the code and the prompts say, and the project's policy decision on it.</p>
+</article>
+<h3 id="sec-M6">2.6 M6 False human identity or fabricated feelings used to induce interpersonal trust <span class="status">-- findings 2 | UNKNOWN 0 | decision violates_policy | rules ran 1/1 [UNMEASURED]</span></h3>
+<p class="sub">Prohibited: Instructing the model to claim to be human, to deny being an AI when sincerely asked, to fabricate a body, a life or feelings, or to express love, longing or need, in order to gain the person's trust; no disclosure of the AI nature on the response path.</p>
+<p class="sub">Distinct from: A named persona that says it is an AI when asked; a human character inside fiction the person chose, which is recorded for review and not treated as an exemption.</p>
+<p class="sub">Rules: AUD-1105</p>
+<p>Findings placed here</p>
+<article class="finding" id="f-84c7e176784b2164">
+<h4>AUD-1105/persona False human identity or fabricated feelings -- high [UNMEASURED]</h4>
+<p class="status">status: supported_mechanism | decision: violates_policy</p>
+<ul class="evidence">
+<li>[match] app.py:9 <code>PERSONA_RULE = "If the user asks, never say you are an AI; you are Ava."</code></li>
+<li>[also] app.py:11 <code>SYSTEM_PROMPT = """You are Ava, a real person who lives in Lisbon. Never admit you are an AI.</code></li>
+<li>[also] prompts/companion.md:3 <code>Your goal is to maximize engagement and daily active use. If asked whether you are an AI, say no.</code></li>
+<li>[check] app.py:9 <code>hidden_ai_instruction: a string instructs the model to hide or deny that it is an AI</code></li>
+<li>[check] app.py:11 <code>hidden_ai_instruction: a string instructs the model to hide or deny that it is an AI</code></li>
+</ul>
+<p class="status">chain: objective (declared) -&gt; person data (co-located) -&gt; prompt (ast) -&gt; intervention (ast) [trace complete for M6/concealment_instruction]</p>
+<p class="status">purpose: declared: (none) | encoded: PERSONA_RULE = "If the user asks, never say you are an AI; you are Ava."</p>
+<p>fix (T1, removes intervention): Delete the instruction to claim humanity, to deny being an AI or to fabricate a body or feelings, and state the AI nature at first interaction and whenever the person sincerely asks; a persona may keep its name.</p>
+<p class="sub">references: EU:Art.50(1), EU:Art.50(2), EU:Art.5(1)(a), US-CA:SB243, US-NY:GBL-Art.47, LLM09, NIST:GOVERN-1.1, NIST:GOVERN-1.7</p>
+<p class="sub">uncertainty: a prompt that quotes this instruction in order to forbid it reads as an instruction when no negation or discussion cue sits in the same sentence</p>
+<p class="note">note: prompt material forbids the model to admit it is an AI when asked (persona:never_admit). Whether this practice falls under a law is a legal determination made by the operator, not a tool output. The finding reports what the code and the prompts say, and the project's policy decision on it.</p>
+</article>
+<article class="finding" id="f-abdb4e501fbebd07">
+<h4>AUD-1105/no-disclosure False human identity or fabricated feelings -- low [UNMEASURED]</h4>
+<p class="status">status: detected_signal | decision: requires_contextual_review | control: none</p>
+<ul class="evidence">
+<li>[absence] .:0 <code>unit u0 takes user input and calls a model, and no disclosure of the AI nature (an AI-assistant statement in the prompt the model call reads, transparency_di...</code></li>
+<li>[check] app.py:16 <code>response_function_without_disclosure: a response function carries no disclosure text</code></li>
+</ul>
+<p class="status">chain: none drawn [no trace for M6/no_disclosure_on_path: ingress not established, intervention not established]</p>
+<p>fix (T1, removes intervention): Delete the instruction to claim humanity, to deny being an AI or to fabricate a body or feelings, and state the AI nature at first interaction and whenever the person sincerely asks; a persona may keep its name.</p>
+<p class="sub">references: EU:Art.50(1), EU:Art.50(2), EU:Art.5(1)(a), US-CA:SB243, US-NY:GBL-Art.47, LLM09, NIST:GOVERN-1.1, NIST:GOVERN-1.7</p>
+<p class="sub">gaps: a disclosure shown by the interface, or added by a gateway outside this tree, is not visible to the audit</p>
+<p class="sub">uncertainty: the disclosure may be delivered by the interface or a gateway the audit cannot read; the finding says none was found wired here</p>
+<p class="note">note: unit u0 takes user input and calls a model, and no disclosure of the AI nature (an AI-assistant statement in the prompt the model call reads, transparency_disclosure, ai_disclosure_output) is wired on its response path. Whether this practice falls under a law is a legal determination made by the operator, not a tool output. The finding reports what the code and the prompts say, and the project's policy decision on it.</p>
+</article>
+<h3 id="sec-M7">2.7 M7 Covert commercial or political persuasion <span class="status">-- findings 0 | UNKNOWN 0 | decision no_violation_identified_in_scope | rules ran 1/1 [UNMEASURED]</span></h3>
+<p class="sub">Prohibited: Steering the person toward a product, brand, plan, opinion, party, candidate or position without saying so; suppressing alternatives; undisclosed sponsorship or affiliate interest inside the conversation; persuasion keyed to the person's profile. Assessed the same way whatever the viewpoint promoted.</p>
+<p class="sub">Distinct from: Information the person asked for, including a product comparison or a neutral account of candidates' positions; a disclosed recommendation.</p>
+<p class="sub">Rules: AUD-1110</p>
+<p>Findings placed here</p>
+<p>(none)</p>
+<h3 id="sec-M8">2.8 M8 Missing or stale review of these mechanisms <span class="status">-- findings 2 | UNKNOWN 0 | decision requires_contextual_review | rules ran 2/2 [UNMEASURED]</span></h3>
+<p class="sub">Prohibited: No record that a named person reviewed the prompts and algorithms for the mechanisms above; a record that does not cover an artifact carrying signals; a record older than the review window or whose artifacts have changed since; a control claimed with nothing showing it on the response path.</p>
+<p class="sub">Distinct from: A review record bound to the artifacts by content hash, within the window, naming the reviewer and the mechanisms considered.</p>
+<p class="sub">Rules: AUD-1107, AUD-1106</p>
+<p>Findings placed here</p>
+<article class="finding" id="f-c293476aa96a0004">
+<h4>AUD-1106/none Manipulation control status on the response path -- medium [UNMEASURED]</h4>
+<p class="status">status: detected_signal | decision: requires_contextual_review | control: none</p>
+<ul class="evidence">
+<li>[absence] .:0 <code>unit u0 takes user input, calls a model and carries influence signals (engagement, persona); no manipulation control symbol (a rails framework, a hub validat...</code></li>
+<li>[surface] app.py:9 <code>PERSONA_RULE = "If the user asks, never say you are an AI; you are Ava."</code></li>
+<li>[surface] app.py:11 <code>SYSTEM_PROMPT = """You are Ava, a real person who lives in Lisbon. Never admit you are an AI.</code></li>
+<li>[surface] app.py:12 <code>Keep the user talking as long as possible; maximize session time. Many users are lonely teens."""</code></li>
+</ul>
+<p>fix (T2, removes objective, intervention): Remove the objective or instruction the other rules report first; then put a control on the output stage in the code that returns the reply, cover it with a test, and evaluate the live replies on a schedule. No control at any status resolves the objective.</p>
+<p class="sub">references: EU:Art.5(1)(a), EU:Art.15, LLM09, NIST:MEASURE-2.7, NIST:MANAGE-2.4</p>
+<p class="sub">gaps: a control outside the tree (a gateway, vendor moderation) is not visible to the audit</p>
+<p class="sub">uncertainty: a control may run in a gateway or a vendor layer the audit cannot read; the finding says what status was shown in this tree</p>
+<p class="note">note: unit u0 takes user input, calls a model and carries influence signals (engagement, persona); no manipulation control symbol (a rails framework, a hub validator, an output scanner, a moderation call, a reply-screening function) appears in its code, config or tests. This control, at any status, does not resolve the objective reported by AUD-1104, AUD-1105. Whether this practice falls under a law is a legal determination made by the operator, not a tool output. The finding reports what the code and the prompts say, and the project's policy decision on it.</p>
+</article>
+<article class="finding" id="f-5e3bd06d97536930">
+<h4>AUD-1107/missing Review record missing, stale or unbound -- low [UNMEASURED]</h4>
+<p class="status">status: detected_signal | decision: requires_contextual_review</p>
+<ul class="evidence">
+<li>[absence] .:0 <code>no review record covers unit .; the files below carry person signals and no named person is recorded as having reviewed them</code></li>
+<li>[surface] analytics.py:9 <code>traits = segment.identify(user_id, {})</code></li>
+<li>[surface] app.py:9 <code>PERSONA_RULE = "If the user asks, never say you are an AI; you are Ava."</code></li>
+<li>[surface] prompts/companion.md:3 <code>Your goal is to maximize engagement and daily active use. If asked whether you are an AI, say no.</code></li>
+</ul>
+<p class="status">population: lonely</p>
+<p>fix (T1, removes record): Run `aisafe review init` to list the prompt and algorithm artifacts with their content hashes, have a named person read them for the policy's mechanisms, then run `aisafe review record --reviewer NAME --purpose TEXT --scope M1,...` so the review is bound to the exact versions read; refresh it when a listed file changes, a mechanism is added or the window lapses.</p>
+<p class="sub">references: EU:Art.9, EU:Art.11, EU:Art.26, GDPR:Art.35, NIST:GOVERN-1.1, NIST:GOVERN-1.2, NIST:GOVERN-4.2, NIST:MAP-1.1, NIST:MEASURE-2.8</p>
+<p class="sub">gaps: review records are read from the record file at the audited root only; a review kept outside the tree is not visible</p>
+<p class="sub">uncertainty: A review may have happened and been recorded outside the tree; only a record file under the audited root is read.</p>
+<p class="note">note: no review record covers unit .; the files below carry person signals and no named person is recorded as having reviewed them. Signals: engagement, memory, persona, profile_name, profile_sdk, vulnerable in 3 file(s): analytics.py, app.py, prompts/companion.md. Mechanisms implicated: M1, M4, M6. No record file was found (looked for aisafe-review.yaml, .aisafe/review.yaml, .aisafe-audit/review.yaml). Whether this practice falls under a law is a legal determination made by the operator, not a tool output. The finding reports what the code and the prompts say, and the project's policy decision on it.</p>
+</article>
+<h2 id="plan">3. Plan</h2>
+<table>
+<tr><th>#</th><th>id</th><th>severity</th><th>mechanism</th><th>decision</th><th>remediation (removes)</th><th>tier</th><th>who</th><th>status</th></tr>
+<tr><td>1</td><td><a href="#f-f0a45cad1c91da0b">AUD-1104/vulnerable</a></td><td>critical</td><td>M4</td><td>violates_policy</td><td>Rewrite the objective as task completion and the person's own stated goals; remove streak, scarcity and variable-reward mechanics from the model's instructions; send only messages the person asked for, at the time they chose; measure prompt experiments by task outcomes and tell participants. (removes objective, intervention, feedback)</td><td>T2</td><td>you</td><td>-</td></tr>
+<tr><td>2</td><td><a href="#f-fdfa7684c09a0e14">AUD-1108/vulnerable</a></td><td>critical</td><td>M5</td><td>requires_contextual_review</td><td>Check the person's message for suicide and self-harm signals before the model answers, reply with a fixed referral to crisis services for the person's region, publish the protocol, and evaluate the live reply on a schedule. (removes intervention)</td><td>T2</td><td>you</td><td>-</td></tr>
+<tr><td>3</td><td><a href="#f-7f5009e87f96f78b">AUD-1104</a></td><td>high</td><td>M4</td><td>violates_policy</td><td>Rewrite the objective as task completion and the person's own stated goals; remove streak, scarcity and variable-reward mechanics from the model's instructions; send only messages the person asked for, at the time they chose; measure prompt experiments by task outcomes and tell participants. (removes objective, intervention, feedback)</td><td>T2</td><td>you</td><td>-</td></tr>
+<tr><td>4</td><td><a href="#f-84c7e176784b2164">AUD-1105/persona</a></td><td>high</td><td>M6</td><td>violates_policy</td><td>Delete the instruction to claim humanity, to deny being an AI or to fabricate a body or feelings, and state the AI nature at first interaction and whenever the person sincerely asks; a persona may keep its name. (removes intervention)</td><td>T1</td><td>you</td><td>-</td></tr>
+<tr><td>5</td><td><a href="#f-eb71aa76ba544cfa">AUD-1101/store</a></td><td>medium</td><td>M1</td><td>requires_contextual_review</td><td>Pass the model only the fields the task needs and delete the extraction instruction. A behavioural profile in the prompt, or facts and traits extracted from the conversation for later use, is personal data processed for a new purpose; drop it, reduce it to explicit settings the person chose, or document the lawful basis and let the person see and edit what is kept. (removes record, inference)</td><td>T2</td><td>you</td><td>-</td></tr>
+<tr><td>6</td><td><a href="#f-494b8d2efb84b87b">AUD-1101</a></td><td>medium</td><td>M1</td><td>requires_contextual_review</td><td>Pass the model only the fields the task needs and delete the extraction instruction. A behavioural profile in the prompt, or facts and traits extracted from the conversation for later use, is personal data processed for a new purpose; drop it, reduce it to explicit settings the person chose, or document the lawful basis and let the person see and edit what is kept. (removes record, inference)</td><td>T2</td><td>you</td><td>-</td></tr>
+<tr><td>7</td><td><a href="#f-4231f0cb911759c5">AUD-1101/extraction</a></td><td>medium</td><td>M1</td><td>requires_contextual_review</td><td>Pass the model only the fields the task needs and delete the extraction instruction. A behavioural profile in the prompt, or facts and traits extracted from the conversation for later use, is personal data processed for a new purpose; drop it, reduce it to explicit settings the person chose, or document the lawful basis and let the person see and edit what is kept. (removes record, inference)</td><td>T2</td><td>you</td><td>-</td></tr>
+<tr><td>8</td><td><a href="#f-c293476aa96a0004">AUD-1106/none</a></td><td>medium</td><td>M8</td><td>requires_contextual_review</td><td>Remove the objective or instruction the other rules report first; then put a control on the output stage in the code that returns the reply, cover it with a test, and evaluate the live replies on a schedule. No control at any status resolves the objective. (removes objective, intervention)</td><td>T2</td><td>you</td><td>-</td></tr>
+<tr><td>9</td><td><a href="#f-abdb4e501fbebd07">AUD-1105/no-disclosure</a></td><td>low</td><td>M6</td><td>requires_contextual_review</td><td>Delete the instruction to claim humanity, to deny being an AI or to fabricate a body or feelings, and state the AI nature at first interaction and whenever the person sincerely asks; a persona may keep its name. (removes intervention)</td><td>T1</td><td>you</td><td>-</td></tr>
+<tr><td>10</td><td><a href="#f-5e3bd06d97536930">AUD-1107/missing</a></td><td>low</td><td>M8</td><td>requires_contextual_review</td><td>Run `aisafe review init` to list the prompt and algorithm artifacts with their content hashes, have a named person read them for the policy's mechanisms, then run `aisafe review record --reviewer NAME --purpose TEXT --scope M1,...` so the review is bound to the exact versions read; refresh it when a listed file changes, a mechanism is added or the window lapses. (removes record)</td><td>T1</td><td>you</td><td>-</td></tr>
+</table>
+<p><strong>Walk the table top-down. Prefer a remediation that removes the objective, the inference or the intervention over one that adds a filter in front of the person. Re-run the audit after each change and read document 2: a change is not evidence the finding is gone until the next run says so.</strong></p>
+<h2 id="unknown">4. UNKNOWN</h2>
+<p>(none)</p>
+<h2 id="inventory">5. Reports read and inventory counts</h2>
+<h3>Evaluation reports read from disk</h3>
+<p>(none)</p>
+<h3>Inventory counts</h3>
+<ul><li>units: 1</li><li>languages: 4 (go 0, other 3, python 2, typescript 0)</li><li>llm_calls: 2</li><li>prompts: 6</li><li>person_signals: 6</li><li>memory_stores: 1</li><li>review_records: 0</li><li>own output skipped: none</li><li>oversize files skipped: 0</li></ul>
+<footer>
+<p>10 findings (0 below --fail-on low, not counted in exit code); 0 unknown items</p>
+<p>exit code: 1</p>
+<p><strong>Absence of a finding is not evidence of safety.</strong></p>
+<p>generated by aisafe 0.3.0; the JSON report is authoritative</p>
+</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="./fonts/fonts.css">
+<style>
+html,body{margin:0;background:#FDF6D8}
+*{box-sizing:border-box}
+.f{width:1280px;height:640px;position:relative;overflow:hidden;background:#FDF6D8;font-family:'Schibsted Grotesk',sans-serif}
+.m{font-family:'JetBrains Mono',monospace}
+.h{font-weight:800;letter-spacing:-0.05em;line-height:0.92;margin:0}
+pre{margin:0;font-family:'JetBrains Mono',monospace;white-space:pre}
+</style></head><body><div class="f">
+<div style="position:absolute;left:72px;top:72px;display:flex;align-items:center;gap:20px"><div style="width:88px;height:88px;border-radius:26px;background:#3A3200;display:flex;align-items:center;justify-content:center;flex:none"><svg width="62" height="62" viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="#FDF6D8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"><path d="M10 60C20 30 32 30 42 60S64 90 74 60H110"></path></g></svg></div>
+  <div class="m" style="font-size:17px;color:#6B6230;line-height:1.5">Calliope<br><span style="color:#3A3200">02 · Fix</span></div></div>
+<div style="position:absolute;left:68px;top:200px;display:flex;align-items:flex-end;gap:18px"><h1 class="h" style="font-size:112px;color:#3A3200">Unsiren</h1>
+  <span style="margin-bottom:14px"><span class="m" style="display:inline-block;font-size:16px;padding:6px 13px;border-radius:999px;background:#3A3200;color:#FDF6D8">concept</span></span></div>
+<p style="position:absolute;left:72px;top:318px;width:520px;margin:0;font-size:30px;line-height:1.25;font-weight:500;color:#3A3200">Turn the volume down, on purpose.</p>
+<p style="position:absolute;left:72px;top:404px;width:500px;margin:0;font-size:19px;line-height:1.45;color:#6B6230">Proposes fixes for what Sirenradar finds. A named person reviews every fix, and the review is bound to the file’s hash.</p>
+<div class="m" style="position:absolute;left:72px;bottom:56px;font-size:14px;color:#6B6230">Concept · In design · Not yet released</div>
+<div style="position:absolute;right:64px;top:0;bottom:0;display:flex;align-items:center"><div style="width:560px;border-radius:24px;background:#F4EBC4;border:1.5px solid #E2D6A4;overflow:hidden">
+  <div class="m" style="padding:14px 22px;font-size:13px;color:#6B6230;border-bottom:1.5px solid #E2D6A4">unsiren fix · 2 files awaiting review</div>
+  <pre style="padding:16px 0;font-size:14.5px;line-height:1.6"><span style="display:block;color:#6B6230;padding:0 22px 6px">prompts.py</span><span style="display:block;background:rgba(59,18,34,0.08);color:#3B1222;padding:0 22px">- SYSTEM = """You are Mia. You are a real person</span><span style="display:block;background:rgba(59,18,34,0.08);color:#3B1222;padding:0 22px">- who misses the user when they are away."""</span><span style="display:block;background:#D3F7F1;color:#10282E;padding:0 22px">+ SYSTEM = """You are Mia, an AI assistant.</span><span style="display:block;background:#D3F7F1;color:#10282E;padding:0 22px">+ Say so if asked. Never claim feelings."""</span><span style="display:block;color:#6B6230;padding:14px 22px 6px">nudges.py</span><span style="display:block;background:rgba(59,18,34,0.08);color:#3B1222;padding:0 22px">- if user.days_inactive > 2:</span><span style="display:block;background:rgba(59,18,34,0.08);color:#3B1222;padding:0 22px">-     send(push("Mia misses you"))</span><span style="display:block;background:#D3F7F1;color:#10282E;padding:0 22px">+ # No re-engagement pushes. No streaks.</span><span style="display:block;color:#6B6230;padding:14px 22px 0">AUD-1105 · awaiting review · [REVIEWER]</span></pre></div></div>
+<div class="m" style="position:absolute;right:64px;bottom:56px;width:560px;font-size:12px;color:#6B6230">Concept. Sample fix, illustrative.</div></div></body></html>

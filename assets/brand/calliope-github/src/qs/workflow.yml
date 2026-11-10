@@ -1,0 +1,18 @@
+name: AI influence audit
+on: [pull_request, push]
+permissions:
+  contents: read
+  security-events: write   # SARIF upload (on by default)
+  pull-requests: write     # only if pr-comment is "true"
+jobs:
+  aisafe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ai-safe-earth/AnyAISafe@v0.3.0
+        with:
+          fail-on: high
+          # optional; commit it first (aisafe audit . --write-baseline audit-baseline.json)
+          baseline: audit-baseline.json
+          pr-comment: "true"
+```

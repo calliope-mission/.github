@@ -1,0 +1,250 @@
+[
+ {
+  "src": "src/wm-calliope-wordmark-petrol.html",
+  "png": "wordmarks/png/calliope-wordmark-petrol.png",
+  "width": 390,
+  "height": 104,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-calliope-wordmark-cream.html",
+  "png": "wordmarks/png/calliope-wordmark-cream.png",
+  "width": 390,
+  "height": 104,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-calliope-wordmark-aqua.html",
+  "png": "wordmarks/png/calliope-wordmark-aqua.png",
+  "width": 390,
+  "height": 104,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-sirenradar-wordmark-plum.html",
+  "png": "wordmarks/png/sirenradar-wordmark-plum.png",
+  "width": 513,
+  "height": 104,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-sirenradar-wordmark-lilac.html",
+  "png": "wordmarks/png/sirenradar-wordmark-lilac.png",
+  "width": 513,
+  "height": 104,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-sirenradar-wordmark-cream.html",
+  "png": "wordmarks/png/sirenradar-wordmark-cream.png",
+  "width": 513,
+  "height": 104,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-unsiren-wordmark-olive.html",
+  "png": "wordmarks/png/unsiren-wordmark-olive.png",
+  "width": 373,
+  "height": 104,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-unsiren-wordmark-cream.html",
+  "png": "wordmarks/png/unsiren-wordmark-cream.png",
+  "width": 373,
+  "height": 104,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-calliope-lockup-for-light.html",
+  "png": "wordmarks/png/calliope-lockup-for-light.png",
+  "width": 538,
+  "height": 120,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-calliope-lockup-for-dark.html",
+  "png": "wordmarks/png/calliope-lockup-for-dark.png",
+  "width": 538,
+  "height": 120,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-calliope-lockup-tagline-for-light.html",
+  "png": "wordmarks/png/calliope-lockup-tagline-for-light.png",
+  "width": 473,
+  "height": 120,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-calliope-lockup-tagline-for-dark.html",
+  "png": "wordmarks/png/calliope-lockup-tagline-for-dark.png",
+  "width": 473,
+  "height": 120,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-sirenradar-lockup-for-light.html",
+  "png": "wordmarks/png/sirenradar-lockup-for-light.png",
+  "width": 663,
+  "height": 120,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-sirenradar-lockup-for-dark.html",
+  "png": "wordmarks/png/sirenradar-lockup-for-dark.png",
+  "width": 663,
+  "height": 120,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-sirenradar-lockup-endorsed-for-light.html",
+  "png": "wordmarks/png/sirenradar-lockup-endorsed-for-light.png",
+  "width": 578,
+  "height": 120,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-sirenradar-lockup-endorsed-for-dark.html",
+  "png": "wordmarks/png/sirenradar-lockup-endorsed-for-dark.png",
+  "width": 578,
+  "height": 120,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-unsiren-lockup-for-light.html",
+  "png": "wordmarks/png/unsiren-lockup-for-light.png",
+  "width": 520,
+  "height": 120,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-unsiren-lockup-for-dark.html",
+  "png": "wordmarks/png/unsiren-lockup-for-dark.png",
+  "width": 520,
+  "height": 120,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-unsiren-lockup-endorsed-for-light.html",
+  "png": "wordmarks/png/unsiren-lockup-endorsed-for-light.png",
+  "width": 458,
+  "height": 120,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-unsiren-lockup-endorsed-for-dark.html",
+  "png": "wordmarks/png/unsiren-lockup-endorsed-for-dark.png",
+  "width": 458,
+  "height": 120,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-orfeo-apps-wordmark-petrol.html",
+  "png": "wordmarks/png/orfeo-apps-wordmark-petrol.png",
+  "width": 517,
+  "height": 104,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-orfeo-apps-wordmark-aqua.html",
+  "png": "wordmarks/png/orfeo-apps-wordmark-aqua.png",
+  "width": 517,
+  "height": 104,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-orfeo-apps-wordmark-cream.html",
+  "png": "wordmarks/png/orfeo-apps-wordmark-cream.png",
+  "width": 517,
+  "height": 104,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-orfeo-apps-lockup-for-light.html",
+  "png": "wordmarks/png/orfeo-apps-lockup-for-light.png",
+  "width": 668,
+  "height": 120,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-orfeo-apps-lockup-for-dark.html",
+  "png": "wordmarks/png/orfeo-apps-lockup-for-dark.png",
+  "width": 668,
+  "height": 120,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-orfeo-apps-lockup-endorsed-for-light.html",
+  "png": "wordmarks/png/orfeo-apps-lockup-endorsed-for-light.png",
+  "width": 582,
+  "height": 120,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-orfeo-apps-lockup-endorsed-for-dark.html",
+  "png": "wordmarks/png/orfeo-apps-lockup-endorsed-for-dark.png",
+  "width": 582,
+  "height": 120,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-badge-orfeo-app-petrol.html",
+  "png": "wordmarks/png/badge-orfeo-app-petrol.png",
+  "width": 297,
+  "height": 40,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-badge-orfeo-app-aqua.html",
+  "png": "wordmarks/png/badge-orfeo-app-aqua.png",
+  "width": 297,
+  "height": 40,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-badge-orfeo-app-outline-for-light.html",
+  "png": "wordmarks/png/badge-orfeo-app-outline-for-light.png",
+  "width": 297,
+  "height": 40,
+  "scale": 4,
+  "transparent": true
+ },
+ {
+  "src": "src/wm-badge-orfeo-app-outline-for-dark.html",
+  "png": "wordmarks/png/badge-orfeo-app-outline-for-dark.png",
+  "width": 297,
+  "height": 40,
+  "scale": 4,
+  "transparent": true
+ }
+]

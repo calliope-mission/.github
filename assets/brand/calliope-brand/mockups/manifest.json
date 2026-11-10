@@ -1,0 +1,110 @@
+[
+  {
+    "section": "product",
+    "name": "01-K1-guidelines-cover",
+    "width": 1280,
+    "height": 800,
+    "motion": false,
+    "source_board": "K1-Cover",
+    "still_at_seconds": 0
+  },
+  {
+    "section": "product",
+    "name": "02-M0i-organisation",
+    "width": 1280,
+    "height": 900,
+    "motion": false,
+    "source_board": "M0i-ManifestoThree",
+    "still_at_seconds": 0
+  },
+  {
+    "section": "product",
+    "name": "03-M0h-organisation-alt",
+    "width": 1280,
+    "height": 900,
+    "motion": false,
+    "source_board": "M0h-Four",
+    "still_at_seconds": 0
+  },
+  {
+    "section": "product",
+    "name": "04-K5-sirenradar-in-motion",
+    "width": 1280,
+    "height": 800,
+    "motion": true,
+    "source_board": "K5-Sirenradar",
+    "still_at_seconds": 7.4
+  },
+  {
+    "section": "product",
+    "name": "05-K6-unsiren-in-motion",
+    "width": 1280,
+    "height": 800,
+    "motion": true,
+    "source_board": "K6-Unsiren",
+    "still_at_seconds": 5.5
+  },
+  {
+    "section": "mission",
+    "name": "01-M1-mission",
+    "width": 1280,
+    "height": 800,
+    "motion": false,
+    "source_board": "M1-Mission",
+    "still_at_seconds": 0
+  },
+  {
+    "section": "mission",
+    "name": "02-M2-evidence",
+    "width": 1280,
+    "height": 800,
+    "motion": false,
+    "source_board": "M2-Evidence",
+    "still_at_seconds": 0
+  },
+  {
+    "section": "mission",
+    "name": "03-M4-how-we-work",
+    "width": 1280,
+    "height": 800,
+    "motion": true,
+    "source_board": "M4-HowWeWork",
+    "still_at_seconds": 6.0
+  },
+  {
+    "section": "mission",
+    "name": "04-M5-what-we-make",
+    "width": 1280,
+    "height": 800,
+    "motion": true,
+    "source_board": "M5-WhatWeMake",
+    "still_at_seconds": 1.6
+  },
+  {
+    "section": "elements",
+    "name": "01-K9-the-figure",
+    "width": 1280,
+    "height": 800,
+    "motion": false,
+    "source_board": "K9-Figure",
+    "still_at_seconds": 0
+  },
+  {
+    "section": "elements",
+    "name": "02-K11-product-icons",
+    "width": 1280,
+    "height": 800,
+    "motion": false,
+    "source_board": "K11-Products",
+    "still_at_seconds": 0
+  },
+  {
+    "section": "elements",
+    "name": "03-K15-orfeo-mark",
+    "width": 1280,
+    "height": 800,
+    "motion": false,
+    "source_board": "K15-OrfeoMark",
+    "still_at_seconds": 0
+  }
+]

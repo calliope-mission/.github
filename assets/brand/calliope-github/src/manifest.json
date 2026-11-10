@@ -1,0 +1,135 @@
+[
+ {
+  "src": "src/calliope-avatar.html",
+  "png": "calliope-org/avatar.png",
+  "width": 512,
+  "height": 512,
+  "scale": 2
+ },
+ {
+  "src": "src/calliope-avatar-petrol.html",
+  "png": "calliope-org/avatar-alt-petrol.png",
+  "width": 512,
+  "height": 512,
+  "scale": 2
+ },
+ {
+  "src": "src/sirenradar-icon.html",
+  "png": "sirenradar/icon.png",
+  "width": 512,
+  "height": 512,
+  "scale": 2
+ },
+ {
+  "src": "src/unsiren-icon.html",
+  "png": "unsiren/icon.png",
+  "width": 512,
+  "height": 512,
+  "scale": 2
+ },
+ {
+  "src": "src/calliope-profile-banner.html",
+  "png": "calliope-org/profile/assets/calliope-banner.png",
+  "width": 1280,
+  "height": 400,
+  "scale": 2
+ },
+ {
+  "src": "src/calliope-social-preview.html",
+  "png": "calliope-org/social-preview.png",
+  "width": 1280,
+  "height": 640,
+  "scale": 1
+ },
+ {
+  "src": "src/sirenradar-social-preview.html",
+  "png": "sirenradar/social-preview.png",
+  "width": 1280,
+  "height": 640,
+  "scale": 1
+ },
+ {
+  "src": "src/sirenradar-readme-banner.html",
+  "png": "sirenradar/assets/brand/sirenradar-banner.png",
+  "width": 1280,
+  "height": 400,
+  "scale": 2
+ },
+ {
+  "src": "src/unsiren-social-preview.html",
+  "png": "unsiren/social-preview.png",
+  "width": 1280,
+  "height": 640,
+  "scale": 1
+ },
+ {
+  "src": "src/unsiren-readme-banner.html",
+  "png": "unsiren/assets/brand/unsiren-banner.png",
+  "width": 1280,
+  "height": 400,
+  "scale": 2
+ },
+ {
+  "src": "src/calliope-social-preview-minimal.html",
+  "png": "calliope-org/social-preview-minimal.png",
+  "width": 1280,
+  "height": 640,
+  "scale": 1
+ },
+ {
+  "src": "src/sirenradar-social-preview-minimal.html",
+  "png": "sirenradar/social-preview-minimal.png",
+  "width": 1280,
+  "height": 640,
+  "scale": 1
+ },
+ {
+  "src": "src/unsiren-social-preview-minimal.html",
+  "png": "unsiren/social-preview-minimal.png",
+  "width": 1280,
+  "height": 640,
+  "scale": 1
+ },
+ {
+  "src": "src/calliope-banner-minimal.html",
+  "png": "calliope-org/profile/assets/calliope-banner-minimal.png",
+  "width": 1280,
+  "height": 320,
+  "scale": 2
+ },
+ {
+  "src": "src/calliope-banner-minimal-cream.html",
+  "png": "calliope-org/profile/assets/calliope-banner-minimal-cream.png",
+  "width": 1280,
+  "height": 320,
+  "scale": 2
+ },
+ {
+  "src": "src/orfeo-apps-icon.html",
+  "png": "orfeo-apps/icon.png",
+  "width": 512,
+  "height": 512,
+  "scale": 2
+ },
+ {
+  "src": "src/orfeo-apps-social-preview.html",
+  "png": "orfeo-apps/social-preview.png",
+  "width": 1280,
+  "height": 640,
+  "scale": 1
+ },
+ {
+  "src": "src/orfeo-apps-social-preview-minimal.html",
+  "png": "orfeo-apps/social-preview-minimal.png",
+  "width": 1280,
+  "height": 640,
+  "scale": 1
+ },
+ {
+  "src": "src/orfeo-apps-readme-banner.html",
+  "png": "orfeo-apps/assets/brand/orfeo-apps-banner.png",
+  "width": 1280,
+  "height": 400,
+  "scale": 2
+ }
+]

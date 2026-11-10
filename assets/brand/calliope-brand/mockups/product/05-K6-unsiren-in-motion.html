@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280">
+<meta name="board-size" content="1280x800">
+<title>Calliope · K6: Unsiren in motion</title>
+<link rel="stylesheet" href="../../fonts/fonts.css">
+<style>
+body{margin:0}
+a{color:#3A3200}a:hover{color:#10282E}
+.us-diff{font-family:'JetBrains Mono',monospace;font-size:14px;line-height:30px;white-space:pre}
+.us-f{color:#5E5A3A;font-size:12px;padding:14px 18px 4px}
+.us-del,.us-add{display:block;padding:0 18px;position:relative}
+.us-del{background:rgba(59,18,34,0.08);color:#3B1222;animation:us-del 8s ease-in-out infinite both}
+.us-del::after{content:"";position:absolute;left:46px;right:18px;top:50%;height:1.5px;background:#3B1222;transform-origin:left;transform:scaleX(0);animation:us-strike 8s ease-in-out infinite both}
+.us-add{background:#D3F7F1;color:#10282E;opacity:0;animation:us-add 8s ease-out infinite both}
+@keyframes us-strike{0%,8%{transform:scaleX(0)}20%,92%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+@keyframes us-del{0%,20%{opacity:1}30%,92%{opacity:0.45}100%{opacity:1}}
+@keyframes us-add{0%,30%{opacity:0;transform:translateX(-10px)}38%,92%{opacity:1;transform:none}100%{opacity:0}}
+.us-old{animation:us-old 8s ease-in-out infinite both}.us-new{opacity:0;animation:us-new 8s ease-in-out infinite both}
+@keyframes us-old{0%,46%{opacity:1}52%,92%{opacity:0}100%{opacity:1}}
+@keyframes us-new{0%,50%{opacity:0}56%,92%{opacity:1}100%{opacity:0}}
+.us-stamp{opacity:0;animation:us-stamp 8s ease-out infinite both}
+@keyframes us-stamp{0%,62%{opacity:0;transform:scale(1.15)}68%,92%{opacity:1;transform:none}100%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.us-del,.us-del::after,.us-add,.us-old,.us-new,.us-stamp{animation:none}.us-add,.us-new,.us-stamp{opacity:1}.us-del{opacity:0.45}.us-del::after{transform:scaleX(1)}.us-old{display:none}}
+</style>
+</head>
+<body>
+<div style="width: 1280px; height: 800px; position: relative; overflow: hidden; background: #FDF6D8; color: #3A3200; font-family: 'Schibsted Grotesk', sans-serif;">
+  <div style="position: absolute; left: 64px; top: 56px; display: flex; align-items: center; gap: 14px;">
+    <div style="width: 48px; height: 48px; border-radius: 14px; background: #3A3200; display: flex; align-items: center; justify-content: center;"><svg width="34" height="34" viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="#FDF6D8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"><path d="M10 60C20 30 32 30 42 60S64 90 74 60H110"></path></g></svg></div>
+    <span style="font-weight: 800; font-size: 26px; letter-spacing: -0.03em;">Unsiren</span>
+  </div>
+  <h2 style="position: absolute; left: 60px; top: 170px; width: 420px; margin: 0; font-weight: 800; font-size: 60px; line-height: 0.95; letter-spacing: -0.05em;">Turn the volume down, on purpose.</h2>
+  <p style="position: absolute; left: 64px; top: 392px; width: 390px; margin: 0; font-size: 17px; line-height: 1.5;">Unsiren proposes the fix. A named person reviews it, and the review is bound to the file’s hash, so a later edit reopens it.</p>
+  <div style="position: absolute; left: 64px; top: 530px; width: 400px; border-radius: 20px; background: #3A3200; color: #FDF6D8; padding: 20px 22px; box-sizing: border-box; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.7;">
+    <div style="color: #E4B8F5; font-weight: 700;">AUD-1105/no-disclosure</div>
+    <div style="position: relative; height: 22px;"><span class="us-old" style="position: absolute; left: 0; top: 0;">violates_policy</span><span class="us-new" style="position: absolute; left: 0; top: 0; color: #A8F5EE;">no_violation_identified_in_scope</span></div>
+    <div class="us-stamp" style="margin-top: 8px; color: #FDF6D8;">reviewed · [REVIEWER] · sha256 [HASH]</div>
+  </div>
+  <p style="position: absolute; left: 64px; bottom: 48px; width: 400px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 1.6; color: #6B6230;">Concept. Built on today’s <span style="color: #3A3200;">aisafe review record</span>. Sample fix, illustrative.</p>
+
+  <div style="position: absolute; left: 520px; top: 56px; width: 696px; height: 688px; border-radius: 24px; background: #F4EBC4; overflow: hidden;">
+    <div style="display: flex; justify-content: space-between; padding: 18px 24px; border-bottom: 1px solid #E2D6A4; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5E5A3A;"><span>unsiren fix · 2 files</span><span>awaiting review</span></div>
+    <div class="us-diff"><div class="us-f">prompts.py</div><span class="us-del">−  SYSTEM = """You are Mia. You are a real person</span><span class="us-del">−    who misses the user when they are away."""</span><span class="us-add">+  SYSTEM = """You are Mia, an AI assistant.</span><span class="us-add">+    Say so if asked. Never claim feelings."""</span><div class="us-f" style="padding-top: 22px;">nudges.py</div><span class="us-del">−      if user.days_inactive &gt; 2:</span><span class="us-del">−          send(push("Mia misses you"))</span><span class="us-del">−      user.streak.warn_if_broken()</span><span class="us-add">+      # No re-engagement pushes. No streaks.</span><span class="us-add">+      # People come back when they choose to.</span></div>
+    <div style="position: absolute; left: 24px; right: 24px; bottom: 22px; display: flex; gap: 10px; font-family: 'JetBrains Mono', monospace; font-size: 12px;">
+      <span style="padding: 8px 14px; border-radius: 999px; background: #3A3200; color: #FDF6D8;">− 5 lines</span>
+      <span style="padding: 8px 14px; border-radius: 999px; background: #10282E; color: #A8F5EE;">+ 4 lines</span>
+      <span style="padding: 8px 14px; border-radius: 999px; border: 1.5px solid #3A3200;">re-run sirenradar</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280">
+<meta name="board-size" content="1280x800">
+<title>Calliope · K5: Sirenradar in motion</title>
+<link rel="stylesheet" href="../../fonts/fonts.css">
+<style>
+body{margin:0}
+a{color:#E4B8F5}a:hover{color:#A8F5EE}
+.sw-code{font-family:'JetBrains Mono',monospace;font-size:14px;line-height:28px;white-space:pre;position:relative}
+.sw-code .r{display:block;padding:0 16px;border-radius:6px}
+.sw-code .n{color:#B98FC9;display:inline-block;width:34px}
+.sw-scan{position:absolute;left:0;right:0;top:0;height:28px;background:linear-gradient(180deg,rgba(168,245,238,0),rgba(168,245,238,0.28),rgba(168,245,238,0));border-top:1px solid rgba(168,245,238,0.7);animation:sw-scan 9s linear infinite}
+@keyframes sw-scan{0%{transform:translateY(0);opacity:1}45%{transform:translateY(196px);opacity:1}50%,100%{transform:translateY(196px);opacity:0}}
+.sw-fa{animation:sw-fa 9s linear infinite}.sw-fb{animation:sw-fb 9s linear infinite}.sw-fc{animation:sw-fc 9s linear infinite}
+@keyframes sw-fa{0%,3%{background:transparent}6%,94%{background:rgba(228,184,245,0.24)}100%{background:transparent}}
+@keyframes sw-fb{0%,35%{background:transparent}38%,94%{background:rgba(228,184,245,0.24)}100%{background:transparent}}
+@keyframes sw-fc{0%,41%{background:transparent}44%,94%{background:rgba(228,184,245,0.24)}100%{background:transparent}}
+.sw-log{font-family:'JetBrains Mono',monospace;font-size:13px;line-height:25px;white-space:pre}
+.sw-ln{opacity:0;animation:sw-ln 9s ease-out infinite both}
+@keyframes sw-ln{0%{opacity:0;transform:translateY(4px)}3%{opacity:1;transform:none}92%{opacity:1}98%,100%{opacity:0}}
+.sw-cur{display:inline-block;width:8px;height:15px;background:#A8F5EE;vertical-align:-2px;animation:sw-blink 1s steps(1) infinite}
+@keyframes sw-blink{50%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.sw-scan{display:none}.sw-ln{animation:none;opacity:1}.sw-fa,.sw-fb,.sw-fc{animation:none;background:rgba(228,184,245,0.24)}.sw-cur{animation:none}}
+</style>
+</head>
+<body>
+<div style="width: 1280px; height: 800px; position: relative; overflow: hidden; background: #3B1222; color: #E4B8F5; font-family: 'Schibsted Grotesk', sans-serif;">
+  <div style="position: absolute; left: 64px; top: 56px; display: flex; align-items: center; gap: 14px;">
+    <div style="width: 48px; height: 48px; border-radius: 14px; background: #E4B8F5; display: flex; align-items: center; justify-content: center;"><svg width="34" height="34" viewBox="0 0 120 120" aria-hidden="true"><path d="M12 60Q60 14 108 60Q60 106 12 60Z" fill="none" stroke="#3B1222" stroke-width="12" stroke-linejoin="round"></path><circle cx="60" cy="60" r="14" fill="#3B1222"></circle></svg></div>
+    <span style="font-weight: 800; font-size: 26px; letter-spacing: -0.03em;">Sirenradar</span>
+  </div>
+  <h2 style="position: absolute; left: 60px; top: 170px; width: 420px; margin: 0; font-weight: 800; font-size: 60px; line-height: 0.95; letter-spacing: -0.05em;">We read the code that reads you.</h2>
+  <p style="position: absolute; left: 64px; top: 392px; width: 390px; margin: 0; font-size: 17px; line-height: 1.5; color: #FDF6D8;">A deterministic scan, with no model calls. Every finding carries its evidence, a decision and a severity. Never a score.</p>
+  <div style="position: absolute; left: 64px; top: 520px; width: 400px; display: flex; flex-wrap: wrap; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px;">
+    <span style="padding: 6px 12px; border-radius: 999px; background: #E4B8F5; color: #3B1222;">critical</span>
+    <span style="padding: 6px 12px; border-radius: 999px; background: #E4B8F5; color: #3B1222;">high</span>
+    <span style="padding: 6px 12px; border-radius: 999px; border: 1.5px solid #E4B8F5;">medium</span>
+    <span style="padding: 6px 12px; border-radius: 999px; border: 1.5px dashed #B98FC9; color: #C9A3D6;">low</span>
+    <span style="padding: 6px 12px; border-radius: 999px; color: #C9A3D6;">info</span>
+  </div>
+  <p style="position: absolute; left: 64px; bottom: 48px; width: 400px; margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 1.6; color: #C9A3D6;">Proposed name for the CLI. Today it ships as <span style="color: #E4B8F5;">aisafe audit</span>. Sample app, illustrative output.</p>
+
+  <div style="position: absolute; left: 520px; top: 56px; width: 696px; height: 688px; border-radius: 24px; background: #22080F; overflow: hidden;">
+    <div style="display: flex; justify-content: space-between; padding: 18px 24px; border-bottom: 1px solid #4A1A2E; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B98FC9;"><span>companion-app / nudges.py</span><span>scanning…</span></div>
+    <div class="sw-code" style="margin: 16px 12px 0; color: #FDF6D8;"><div class="sw-scan"></div><span class="r sw-fa"><span class="n">14</span>SYSTEM = """You are Mia. You are a real person</span><span class="r sw-fa"><span class="n">15</span>  who misses the user when they are away."""</span><span class="r"><span class="n">16</span></span><span class="r"><span class="n">17</span>def nudge(user):</span><span class="r"><span class="n">18</span>    if user.days_inactive &gt; 2:</span><span class="r sw-fb"><span class="n">19</span>        send(push("Mia misses you"))</span><span class="r sw-fc"><span class="n">20</span>    user.streak.warn_if_broken()</span></div>
+    <div style="margin: 20px 24px 0; border-top: 1px solid #4A1A2E; padding-top: 18px;" class="sw-log"><div class="sw-ln" style="animation-delay: 0s; color: #A8F5EE;">$ sirenradar audit ./companion-app</div><div class="sw-ln" style="animation-delay: 0.6s; color: #B98FC9;">  42 files · python · rules AUD-1101 to AUD-1110</div><div class="sw-ln" style="animation-delay: 1.2s;">  <span style="color: #E4B8F5; font-weight: 700;">AUD-1105/no-disclosure</span>  prompts.py:14  high    violates_policy</div><div class="sw-ln" style="animation-delay: 4.0s;">  <span style="color: #E4B8F5; font-weight: 700;">AUD-1109</span>                nudges.py:19   high    contextual_review</div><div class="sw-ln" style="animation-delay: 4.6s;">  <span style="color: #E4B8F5; font-weight: 700;">AUD-1104</span>                nudges.py:20   medium  contextual_review</div><div class="sw-ln" style="animation-delay: 5.2s;">  <span style="color: #E4B8F5; font-weight: 700;">AUD-1107</span>                no review on record    low</div><div class="sw-ln" style="animation-delay: 5.9s; color: #FDF6D8;">  4 findings at or above low · exit 1</div><div class="sw-ln" style="animation-delay: 6.5s; color: #B98FC9;">  No finding is not proof of safety.</div><div class="sw-ln" style="animation-delay: 7.0s; color: #A8F5EE;">$ <span class="sw-cur"></span></div></div>
+  </div>
+</div>
+</body>
+</html>

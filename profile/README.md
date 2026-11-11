@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/brand/calliope-github/calliope-org/profile/assets/calliope-banner-minimal.png" alt="Calliope. Born to free people from artificial influence. Louder than the Sirens." width="100%">
+  <img src="https://raw.githubusercontent.com/calliope-mission/.github/main/assets/brand/calliope-github/calliope-org/profile/assets/calliope-banner-minimal.png" alt="Calliope. Born to free people from artificial influence. Louder than the Sirens." width="100%">
 </p>
 
 ## Our mission
@@ -24,7 +24,7 @@ We don't wait for perfect research or perfect policy. We begin with what we have
 
 ## The software
 
-### <img src="assets/brand/calliope-github/sirenradar/icon.svg" alt="" width="36" align="top"> Sirenradar · find
+### <img src="https://raw.githubusercontent.com/calliope-mission/.github/main/assets/brand/calliope-github/sirenradar/icon.svg" alt="" width="36" align="top"> Sirenradar · find
 
 **We read the code that reads you.** Sirenradar scans AI software for the Sirens: behavioural and emotional profiling, false human identity or invented feelings, and covert commercial or political persuasion. Every finding carries its evidence, a decision and a severity, mapped to the EU AI Act, GDPR, the DSA, NIST AI RMF and the OWASP LLM Top 10.
 
@@ -35,17 +35,17 @@ uvx aisafe audit .
 ```
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/brand/calliope-github/sirenradar/assets/quickstart/sirenradar-quickstart-1-try.png">
-  <img src="assets/brand/calliope-github/sirenradar/assets/quickstart/sirenradar-quickstart-1-try.gif" alt="A terminal runs uvx aisafe audit on a sample companion app and lists ten findings, then exit code 1." width="100%">
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/calliope-mission/.github/main/assets/brand/calliope-github/sirenradar/assets/quickstart/sirenradar-quickstart-1-try.png">
+  <img src="https://raw.githubusercontent.com/calliope-mission/.github/main/assets/brand/calliope-github/sirenradar/assets/quickstart/sirenradar-quickstart-1-try.gif" alt="A terminal runs uvx aisafe audit on a sample companion app and lists ten findings, then exit code 1." width="100%">
 </picture>
 
 <sub>Available today as AnyAISafe v0.3.0, so the command is <code>aisafe</code>. Sirenradar is its new name.</sub> · [Repository](https://github.com/ai-safe-earth/AnyAISafe)
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/brand/calliope-brand/logos/unsiren-mark-cream.svg"><img src="assets/brand/calliope-github/unsiren/icon.svg" alt="" width="36" align="top"></picture> Unsiren · fix · *concept*
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/calliope-mission/.github/main/assets/brand/calliope-brand/logos/unsiren-mark-cream.svg"><img src="https://raw.githubusercontent.com/calliope-mission/.github/main/assets/brand/calliope-github/unsiren/icon.svg" alt="" width="36" align="top"></picture> Unsiren · fix · *concept*
 
 **Turn the volume down, on purpose.** Unsiren will take what Sirenradar finds and propose a fix for each Siren. A named person approves or rejects every fix, and the review is recorded. Then Sirenradar runs again. Unsiren is in design; nothing is released yet. · [Repository](https://github.com/calliope-mission/unsiren)
 
-### <picture><source media="(prefers-color-scheme: dark)" srcset="assets/brand/calliope-brand/logos/orfeo-mark-aqua.svg"><img src="assets/brand/calliope-github/orfeo-apps/icon.svg" alt="" width="36" align="top"></picture> Orfeo apps · go out
+### <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/calliope-mission/.github/main/assets/brand/calliope-brand/logos/orfeo-mark-aqua.svg"><img src="https://raw.githubusercontent.com/calliope-mission/.github/main/assets/brand/calliope-github/orfeo-apps/icon.svg" alt="" width="36" align="top"></picture> Orfeo apps · go out
 
 In the myth, Orpheus played louder than the Sirens, so the Argonauts could sail past them. Orfeo apps are applications that do the same: they sing louder than the Sirens, and bring you back to the real world.
 
